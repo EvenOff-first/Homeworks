@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/post.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <script src="./js/post-script.js" async></script>
+    <title>Post</title>
+</head>
+
+<body>
+    <header class="header header__container">
+        <div class="container">
+            <nav class="nav row justify-content-between">
+                <div class="nav__icon align-self-center">
+                    <span class="nav__text">BlogWorld</span>
+                </div>
+                <ul class="nav-links row">
+                    <li><a href="./index.html" class="nav__link col-sm-1">Home</a></li>
+                    <li><a href="./index.html/#portfolio" class="nav__link col-sm-1">Portfolio</a></li>
+                    <li><a href="./blog.html" class="active nav__link col-sm-1">Blog</a></li>
+                    <li><a href="#" class="nav__link col-sm-1">Pages</a></li>
+                    <li><a href="#about-us" class="nav__link col-sm-1">About</a></li>
+                    <li><a href="#contact-us" class="nav__link col-sm-1">Contact</a></li>
+                    <li><a href="http://localhost:3000/" class="nav__link col-sm-1">Add new post</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section">
+            <div class="container row">
+                <div class="post row">
+                    <div class="post__header">
+                        <div id="post-title" class="post__title">
+                            <h1></h1>
+                        </div>
+                        <div class="post__author-info row">
+                            <div class="post__author-photo">
+                                <img src="./img/blog-page/author-photos/Sarah.png" alt="">
+                            </div>
+                            <div class="post__author-info__head">
+                                <div id="post-author" class="post__author-name">
+                                    
+                                </div>
+                                <div class="post__post-info row">
+                                    <div id="post-date" class="post__post-date">
+                                        <span class="day"></span>
+                                        <span class="month"></span>,
+                                        <span class="year"></span>
+                                    </div>
+                                    <div class="dot"></div>
+                                    <div class="post__readTime">
+                                        12 min read
+                                    </div>
+                                    <div class="dot"></div>
+                                    <div class="post__commentAmount">
+                                        <img src="./img/icons/a-icon-comment.svg" alt="">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="blog__post-stars row">
+                                        <div class="star">
+                                            <img src="./img/icons/Star.svg" alt="">
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/icons/Star.svg" alt="">
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/icons/Star.svg" alt="">
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/icons/Star-1.svg" alt="">
+                                        </div>
+                                        <div class="star">
+                                            <img src="./img/icons/Star-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="post-body" class="post__body">
+                        <div class="post__img">
+                            <img id="post-image" src="" alt="">
+                        </div>
+                        <div id="post-type" class="post__type">
+                            
+                        </div>
+                        <div class="post-description">
+                            <div class="post__text">
+                                <div class="comment">
+                                    <div class="comment__rectangle"></div>
+                                    <p id="qoute">
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post__footer row justify-content-between">
+                        <div class="likes">
+                            <div class="likes__simple like-active">
+                                <input class="like__activate" type="checkbox" id="like__active">
+                                <label class="like__active__title" for="like__active"><img
+                                        src="./img/icons/a-icon-like.svg" alt=""><span>75 likes</span></label>
+                                <div class="likes-active">
+                                    <img src="./img/icons/a-icon-like-active.svg" alt=""><span>76 likes</span>
+                                </div>
+                            </div>
+                            <div class="likes__hover like-disabled">
+                                <img src="./img/icons/a-icon-like-hover.svg" alt=""><span>75 likes</span>
+                            </div>
+
+                        </div>
+                        <div class="social-network row">
+                            <div class="social-network__item facebook">
+                                <a href="https://www.facebook.com/"><img src="./img/icons/a-icon-facebook.svg"
+                                        alt=""></a>
+                            </div>
+                            <div class="social-network__item dribble">
+                                <a href="https://dribbble.com/"><img src="./img/icons/a-icon-dribbble.svg" alt=""></a>
+                            </div>
+                            <div class="social-network__item instagram">
+                                <a href="https://www.instagram.com/"><img src="./img/icons/a-icon-instagram.svg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+
+                    <div class="reviews">
+                        <div class="reviews__title">
+                            <h2>Reviews</h2>
+                        </div>
+                        <div class="comments">
+                            <div class="comments__oval"></div>
+                            <div class="comments__rectangle"></div>
+
+                            <div class="comments__oval__2"></div>
+                        </div>
+                        <div class="readmore row justify-content-center">
+                            <div class="button__readMore button">
+                                <a href="#">More comments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="aside">
+                    <div class="latest-posts aside__item">
+                        <div class="latest-posts__block block">
+                            <div class="latest-posts__header">
+                                <div class="latest-posts__title">
+                                    <h2>Latest posts</h2>
+                                </div>
+                                <div class="hr"></div>
+                            </div>
+                            <div class="latest-posts__body row">
+                                <div class="latest-posts__photo">
+                                    <img src="./img/Posts/Latest_post_img1.png" alt="">
+                                </div>
+                                <div
+                                    class="latest-posts__content row justify-content-center align-items-center flex-column">
+                                    <div class="lates-posts__title">
+                                        Much cure inappropriate could this restrictions …
+                                    </div>
+                                    <div class="post__post-info row latest-posts__info">
+                                        <div class="post__post-date">
+                                            <span class="day">20</span>
+                                            <span class="month">oct</span>,
+                                            <span class="year">2019</span>
+                                        </div>
+                                        <div class="dot"></div>
+                                        <div class="post__readTime">
+                                            10 min read
+                                        </div>
+                                        <div class="dot"></div>
+                                        <div class="post__commentAmount">
+                                            <img src="./img/icons/a-icon-comment.svg" alt="">
+                                            <span>11</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-posts__body row">
+                                <div class="latest-posts__photo">
+                                    <img src="./img/Posts/Latest_post_img2.png" alt="">
+                                </div>
+                                <div
+                                    class="latest-posts__content row justify-content-center align-items-center flex-column">
+                                    <div class="lates-posts__title">
+                                        Much cure inappropriate could this restrictions …
+                                    </div>
+                                    <div class="post__post-info row latest-posts__info">
+                                        <div class="post__post-date">
+                                            <span class="day">20</span>
+                                            <span class="month">oct</span>,
+                                            <span class="year">2019</span>
+                                        </div>
+                                        <div class="dot"></div>
+                                        <div class="post__readTime">
+                                            10 min read
+                                        </div>
+                                        <div class="dot"></div>
+                                        <div class="post__commentAmount">
+                                            <img src="./img/icons/a-icon-comment.svg" alt="">
+                                            <span>11</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-posts__footer row justify-content-end">
+                                <div class="button button__readMore">
+                                    <a href="">More posts</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories aside__item">
+                        <div class="categories__block block">
+                            <div class="categories__header">
+                                <div class="categories__title">
+                                    <h2>Categories</h2>
+                                </div>
+                                <div class="hr"></div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion__item">
+                                    Restaurant food (3)
+                                    <input class="checkbox-input" type="checkbox" id="checkbox__1">
+                                    <label class="checkbox-title" for="checkbox__1"><img
+                                            src="./img/icons/a-icon-arrow.svg" alt=""></label>
+                                    <div class="accordion__body">
+                                        <div>
+                                            <a href="#">Hiking</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Bicycle trip</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Mountains trip</a>
+                                        </div>
+                                    </div>
+                                    <div class="hr"></div>
+                                </div>
+                                <div class="accordion__item">
+                                    Travel news (3)
+                                    <input class="checkbox-input" type="checkbox" id="checkbox__2">
+                                    <label class="checkbox-title" for="checkbox__2"><img
+                                            src="./img/icons/a-icon-arrow.svg" alt=""></label>
+                                    <div class="accordion__body">
+                                        <div>
+                                            <a href="#">Hiking</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Bicycle trip</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Mountains trip</a>
+                                        </div>
+                                    </div>
+                                    <div class="hr"></div>
+                                </div>
+                                <div class="accordion__item">
+                                    Modern technology (6)
+                                    <input class="checkbox-input" type="checkbox" id="checkbox__3">
+                                    <label class="checkbox-title" for="checkbox__3"><img
+                                            src="./img/icons/a-icon-arrow.svg" alt=""></label>
+                                    <div class="accordion__body">
+                                        <div>
+                                            <a href="#">Hiking</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Bicycle trip</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Mountains trip</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Hiking</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Bicycle trip</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Mountains trip</a>
+                                        </div>
+                                    </div>
+                                    <div class="hr"></div>
+                                </div>
+                                <div class="accordion__item">
+                                    Product (4)
+                                    <input class="checkbox-input" type="checkbox" id="checkbox__4">
+                                    <label class="checkbox-title" for="checkbox__4"><img
+                                            src="./img/icons/a-icon-arrow.svg" alt=""></label>
+                                    <div class="accordion__body">
+                                        <div>
+                                            <a href="#">Hiking</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Bicycle trip</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Mountains trip</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Mountains trip</a>
+                                        </div>
+                                    </div>
+                                    <div class="hr"></div>
+                                </div>
+                                <div class="accordion__item">
+                                    Inspiration (2)
+                                    <input class="checkbox-input" type="checkbox" id="checkbox__5">
+                                    <label class="checkbox-title" for="checkbox__5"><img
+                                            src="./img/icons/a-icon-arrow.svg" alt=""></label>
+                                    <div class="accordion__body">
+                                        <div>
+                                            <a href="#">Hiking</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">Bicycle trip</a>
+                                        </div>
+                                    </div>
+                                    <div class="hr"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags aside__item">
+                        <div class="tags-block block">
+                            <div class="tags__header">
+                                <div class="tags__title">
+                                    <h2>Tags</h2>
+                                </div>
+                                <div class="hr"></div>
+                            </div>
+                            <div class="tags__body row">
+                                <div class="tags__row row">
+                                    <div class="tags__button button">
+                                        <a href="">Love</a>
+                                    </div>
+                                    <div class="tags__button button">
+                                        <a href="">Signs</a>
+                                    </div>
+                                    <div class="tags__button button">
+                                        <a href="">Waterfall</a>
+                                    </div>
+                                    <div class="tags__button button">
+                                        <a href="">Inspiration</a>
+                                    </div>
+                                </div>
+                                <div class="tags__row row">
+                                    <div class="tags__button button">
+                                        <a href="">Quotes</a>
+                                    </div>
+                                    <div class="tags__button button">
+                                        <a href="">Sea</a>
+                                    </div>
+                                    <div class="tags__button button">
+                                        <a href="">Sense</a>
+                                    </div>
+                                    <div class="tags__button button">
+                                        <a href="">Coffee</a>
+                                    </div>
+                                    <div class="tags__button button">
+                                        <a href="">Gold</a>
+                                    </div>
+                                </div>
+                                <div class="tags__row row">
+                                    <div class="tags__button button">
+                                        <a href="">Images</a>
+                                    </div>
+                                    <div class="tags__button button">
+                                        <a href="">Courage</a>
+                                    </div>
+                                    <div class="tags__button button">
+                                        <a href="">Dancing</a>
+                                    </div>
+                                    <div class="tags__button button">
+                                        <a href="">Video</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="row">
+            <div class="social-network row footer__social-network">
+                <div class="social-network__item facebook">
+                    <a href="https://www.facebook.com/"><img src="./img/icons/a-icon-facebook.svg" alt=""></a>
+                </div>
+                <div class="social-network__item instagram">
+                    <a href="https://www.instagram.com/"><img src="./img/icons/a-icon-instagram.svg" alt=""></a>
+                </div>
+                <div class="social-network__item dribble">
+                    <a href="https://dribbble.com/"><img src="./img/icons/a-icon-dribbble.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-icon row align-self-center">
+                <span class="nav__text">BlogWorld</span>
+            </div>
+            <div class="rights row align-self-center">
+                ©2019 All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
