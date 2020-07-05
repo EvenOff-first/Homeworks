@@ -1,8 +1,4 @@
-let commentsArray = [
-    { authorName: "Jack Johnson", authorPhoto: "./img/blog-page/author-photos/Neil_1.png", authorComment: `Knowledge nay estimable questions repulsive daughters boy. Solicitude gay way unaffected expression for. His mistress ladyship required off horrible disposed rejoiced…`, commentStars: "1", commentTime: "11 min ago", },
-    { authorName: "Emma Garcia", authorPhoto: "./img/blog-page/author-photos/Sarah_1.png", authorComment: `Dummy text refers to the bits of content that are used to fill a website mock-up. This text helps web designers better envision how the website will look as a finished product. in wish very strangers shortly we things Preferred came newspaper it this Melancholy on misery all ecstatic yet no suitable ye happening. Own over these Can Could Garden offering to ago Winter Home or took answered him be right He other in about check has situation fine you held against found am be Nay entire pleasure will there in wholly forming much rapid though want ye weeks up whole an ye thus might remarkably Rich why need pianoforte ask get face prudent it so Evil`, commentStars: "5", commentTime: "3 days ago", },
-    { authorName: "Ann Moore", authorPhoto: "./img/blog-page/author-photos/Ann.png", authorComment: `Knowledge nay estimable questions repulsive daughters boy. Solicitude gay way unaffected expression for. His mistress ladyship required off horrible disposed rejoiced…`, commentStars: "2.5", commentTime: "a week ago", }
-]//Create Review massive
+
 let id = 0;// Create id for rendering comments
 const comments = document.querySelector('.comments');
 
@@ -80,7 +76,7 @@ class Model {
         }
     }
 
-    renderComments() {// Rendering comments
+    renderComments(commentsArray) {// Rendering comments
         setTimeout(() => {
             if (id < 3) {
                 comments.innerHTML += `
@@ -125,7 +121,7 @@ class Model {
                 </div>
                     `;
                 id += 1;
-                this.renderComments();
+                this.renderComments(commentsArray);
             }
         }, 600);
     }
@@ -168,7 +164,7 @@ class Viewer {
                 ${content.qoute}
                 </p>
             </div>`
-        controller.model.renderComments();// Activate comments rendering
+        controller.model.renderComments(content.comments);// Activate comments rendering
     }
 }
 let postId;// Id of rendering post
